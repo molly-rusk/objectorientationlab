@@ -59,7 +59,7 @@ const favoriteThings = {
   Food: 'pasta',
   Person: 'dad',
   Book: 'n/a',
-  Movie: 'Harry Potter',
+  Movie: 'Spiderman',
   Holiday: 'Christmas'
 }
 
@@ -84,7 +84,10 @@ favoriteThings.Show = 'Ozark'
 
 //Code here
 
+favoriteThings.Food = 'Chicken Nuggets'
+favoriteThings.Book = 'Harry Potter'
 
+console.log(favoriteThings)
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
@@ -104,6 +107,10 @@ var carDetails = {
 
 //Code Here
 
+let {color: carColor} = carDetails;
+let {make: carMake} = carDetails;
+let {model: carModel} = carDetails;
+let {year: carYear} = carDetails;
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -114,9 +121,16 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
+let newPerson = {
+  title: 'Student',
+  firstName: 'Molly',
+  lastName: 'Rusk'
+}
+
 function greeting( obj ) {
   //Code Here
   
+ const {title, firstName, lastName} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
